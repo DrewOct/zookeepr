@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const express = require("express");
 const { animals } = require("./data/animals");
-const PORT = process.env.PORT || 3005;
+const PORT = process.env.PORT || 3006;
 const app = express();
 
 // parse incoming string or array data
