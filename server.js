@@ -127,7 +127,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/animals", (req, res) => {
-  res.sendFile(path.join(__dirname, "./animals.html"));
+  res.sendFile(path.join(__dirname, "./public/animals.html"));
 });
 
 app.listen(PORT, () => {
