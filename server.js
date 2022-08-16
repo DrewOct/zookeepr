@@ -1,5 +1,5 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 const express = require("express");
 const { animals } = require("./data/animals");
 const PORT = process.env.PORT || 3005;
@@ -64,10 +64,10 @@ function findById(id, animalsArray) {
 function createNewAnimal(body, animalsArray) {
   const animal = body;
   animalsArray.push(animal);
-fs.writeFileSync(
-    path.join(__dirname, './data/animals.json'),
+  fs.writeFileSync(
+    path.join(__dirname, "./data/animals.json"),
     JSON.stringify({ animals: animalsArray }, null, 2)
-);
+  );
   // return finished code to post route for response
   return animal;
 }
@@ -101,6 +101,6 @@ app.post("/api/animals", (req, res) => {
   res.json(req.body);
 });
 
-app.listen(3005, () => {
+app.listen(PORT, () => {
   console.log(`API server now on port ${PORT}!`);
 });
