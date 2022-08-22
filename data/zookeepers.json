@@ -65,6 +65,12 @@
       "age": 48,
       "favoriteAnimal": "Tiger",
       "id": "10"
+    },
+    {
+      "name": "Jason Herrick",
+      "age": 48,
+      "favoriteAnimal": "Sandcat",
+      "id": "11"
     }
   ]
 }
